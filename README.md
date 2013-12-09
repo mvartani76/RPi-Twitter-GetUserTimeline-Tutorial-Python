@@ -55,3 +55,9 @@ ACCESS_KEY = '***************YOUR DATA*****************'
 ACCESS_SECRET = '***************YOUR DATA*****************'
 
 api = Twython(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET)</code></pre>
+
+Run Code
+========
+<pre class="code-text-only" style="display: none;">
+<code>sudo python rpi-read-tweet.py</code></pre>
+Note that <b>GPIO 11</b> is altered via tweets, <b>"RPI ON" (HIGH)</b> and <b>"RPI OFF" (LOW)</b>.
