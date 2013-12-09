@@ -33,3 +33,25 @@ By default, the app is set to read-only, so we won’t be able to publish tweets
 Once saved, head back to the Details tab and click the button at the bottom to create an OAuth access token – this gives your application access to your own Twitter account. Refresh, and leave the page open for later – we’ll need to copy paste some of those keys in a minute.
 
 <img src ="http://main.makeuseoflimited.netdna-cdn.com/wp-content/uploads/2013/08/access-token.jpg">
+
+Get Code from GitHub
+====================
+Navigate to the Raspberry Pi home directory
+
+<pre class="code-text-only" style="display: none;">
+<code>sudo git clone https://github.com/mvartani76/RPi-Twitter-GetUserTimeline-Tutorial-Python</code></pre>
+
+Update Source with Twitter Credentials
+======================================
+Copy the generated keys from the previous step into the following variables mentioned below.
+
+<pre class="code-text-only" style="display: none;">
+<code>#!/usr/bin/env python
+import sys
+from twython import Twython
+CONSUMER_KEY = '***************YOUR DATA*****************'
+CONSUMER_SECRET = '***************YOUR DATA*****************'
+ACCESS_KEY = '***************YOUR DATA*****************'
+ACCESS_SECRET = '***************YOUR DATA*****************'
+
+api = Twython(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET)</code></pre>
