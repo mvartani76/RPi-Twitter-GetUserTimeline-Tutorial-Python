@@ -61,3 +61,17 @@ Run Code
 <pre class="code-text-only" style="display: none;">
 <code>sudo python rpi-read-tweet.py</code></pre>
 Note that <b>GPIO 11</b> is altered via tweets, <b>"RPI ON" (HIGH)</b> and <b>"RPI OFF" (LOW)</b>.
+
+Or the Xbee version of the code...<br>
+
+<pre class="code-text-only" style="display: none;">
+<code>sudo python rpi-read-tweet-xbee.py</code></pre>
+
+Common Error Messages
+=====================
+<b>401 Error Unauthorized Twitter Page</b> -- Make sure that the time on the server and client are synchronized. This became an issue for me when I traveled from Detroit to San Jose.<br>
+
+To manually change the date and time to synchronize, try the following
+
+<pre class="code-text-only" style="display: none;">
+<code>sudo date -s "Tues Dec  10 11:14:26 PST 2013"</code></pre>
